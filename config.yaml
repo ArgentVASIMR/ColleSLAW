@@ -1,0 +1,66 @@
+# ColleSLAW (Collection of Scripts for LoRA training in Argent's Wrapper)
+# Last update: 27-04-2025
+
+# Directories
+    dataset_img_dir : "../dataset"
+    output_dir      : "../output"
+    class_img_dir   : "../class"
+    base_model_dir  : "" # Put your base model directory here
+    trainer_dir     : "./sd-scripts"
+
+# Model Config
+    base_model_name : "noobaiXLNAIXL_epsilonPred11Version.safetensors"
+    clip_skip       : 2
+    v_prediction    : false
+    sdxl            : true
+
+# Save Settings
+    lora_name       : "MyFirstLoRA"
+    save_amount     : 10
+
+# Dataset Treatment
+    resolution      : 1024
+    bucket_res_step : 64
+    flip_aug        : true
+    lock_front_tags : 0
+
+# Steps
+    base_steps      : 2000
+    warmup_steps    : 200
+    batch_size      : 1
+    grad_accum_step : 1
+    scale_steps     : true
+    scale_lr        : true
+
+# Learning Rates
+    unet_lr         : 0.0001 # Decimals only!
+    text_encoder_lr : 0.00005 # Decimals only!
+    unet_only       : false
+    lr_scheduler    : "cosine"
+
+# Network
+    network_dim     : 16
+    optimiser       : "adamw8bit"
+    optimiser_args:
+        weight_decay : 0.05
+        betas        : "0.9,0.99"
+        #d_coef       : 1.0
+        #eps          : 0.0
+
+# Performance
+    grad_checkpoint : false
+    mem_eff_attn    : false
+    xformers        : true
+    sdpa            : false
+
+# Advanced Hyperparameters
+    network_dropout : 0.1
+    caption_dropout : 0.0
+    tag_dropout     : 0.0
+    noise_offset    : 0.0375
+    min_snr_gamma   : 1
+    max_grad_norm   : 1
+    scale_weight    : 0
+    loss_type       : "l2" # Options are "l2", "huber"
+    network_module  : "networks.lora" # lycoris.kohya // networks.lora
+    precision       : "fp16"
