@@ -5,7 +5,7 @@ import os
 # Future:
 # - Cache latents to disk
 
-with open ("config.yaml", "r") as file:
+with open ("lora-config.yaml", "r") as file:
     config = yaml.safe_load(file)
 
 args = "--max_data_loader_n_workers=1 --persistent_data_loader_workers --caption_extension=\".txt\" --max_token_length=225 --prior_loss_weight=1 --cache_latents --save_model_as=safetensors --enable_bucket --seed=\"0\" --bucket_reso_steps=64 --shuffle_caption "
