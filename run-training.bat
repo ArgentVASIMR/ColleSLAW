@@ -1,5 +1,3 @@
 @echo off
-cd sd-scripts
-venv\Scripts\activate
-cd ..
+sd-scripts\venv\Scripts\activate
 python lora.py
