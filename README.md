@@ -1,8 +1,8 @@
 # ColleSLAW
 Collection of Scripts for LoRA training in Argent's Wrapper
 
-Install:
-```
+## Install:
+```bash
 git clone https://github.com/ArgentVASIMR/ColleSLAW.git
 cd ./ColleSLAW
 
@@ -14,7 +14,7 @@ python -m venv venv
 The venv activation command differs on Windows and Linux:
 - Windows: `venv\Scripts\activate`
 - Linux: `source venv/bin/activate`
-```
+```bash
 pip install torch==2.6.0 torchvision==0.21.0 xformers==0.0.29.post2 --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade -r requirements.txt
 pip install --force-reinstall "numpy<2"
@@ -23,3 +23,7 @@ pip install dadaptation
 
 accelerate config
 ```
+## First time run:
+1. Inside of config.yaml, set `base_model_dir` to where your models are located.
+2. Add a dataset to the `dataset` folder. This must be of the structure `ColleSLAW/dataset/#_first,#_second,#_others`.
+3. Run the `run-training` file for your respective operating system. For Windows, it's `.bat`. For Linux, it's `.sh`.
