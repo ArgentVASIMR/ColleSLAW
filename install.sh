@@ -8,7 +8,7 @@ mkdir class
 
 wget https://raw.githubusercontent.com/ArgentVASIMR/ColleSLAW/refs/heads/main/lora.py
 wget https://raw.githubusercontent.com/ArgentVASIMR/ColleSLAW/refs/heads/main/lora-config.yaml
-# wget https://raw.githubusercontent.com/ArgentVASIMR/ColleSLAW/refs/heads/main/run-training.sh
+wget https://raw.githubusercontent.com/ArgentVASIMR/ColleSLAW/refs/heads/main/run-training.sh
 
 echo "ColleSLAW structure built"
 
