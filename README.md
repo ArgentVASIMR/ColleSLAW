@@ -6,7 +6,7 @@ Collection of Scripts for LoRA training in Argent's Wrapper
 git clone https://github.com/ArgentVASIMR/ColleSLAW.git
 cd ./ColleSLAW
 
-git clone https://github.com/kohya-ss/sd-scripts.git
+git clone -b sd3 https://github.com/kohya-ss/sd-scripts.git
 cd sd-scripts
 
 python -m venv venv
