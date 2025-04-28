@@ -23,6 +23,17 @@ pip install dadaptation
 
 accelerate config
 ```
+The answers for the questions from `accelerate config` are:
+```
+Q: Which type?        A: No distributed training
+Q: CPU only?          A: no
+Q: Torch dynamo?      A: no
+Q: DeepSpeed?         A: no
+Q: What GPUs?         A: all
+Q: Numa efficiency?   A: no
+Q: Mixed precision?   A: fp16
+```
+
 ## First time run:
 1. Inside of config.yaml, set `base_model_dir` to where your models are located.
 2. Add a dataset to the `dataset` folder. This must be of the structure `ColleSLAW/dataset/#_first,#_second,#_others`.
