@@ -40,7 +40,7 @@
 
 # Network
     network_dim     : 16
-    optimiser       : "schedulefree.radamwschedulefree"
+    optimiser       : "schedulefree.RAdamScheduleFree"
     optimiser_args:
         weight_decay : 0.05
         betas        : "0.9,0.99"
