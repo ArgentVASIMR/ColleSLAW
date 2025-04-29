@@ -12,9 +12,9 @@ cd sd-scripts
 
 python -m venv venv
 ```
-The venv activation command differs on Windows and Linux:
-- Windows: `venv\Scripts\activate`
-- Linux: `source venv/bin/activate`
+**You must activate the venv, do not skip the command below:**
+- If using Windows: `venv\Scripts\activate`
+- If using Linux: `source venv/bin/activate`
 ```bash
 pip install torch==2.6.0 torchvision==0.21.0 xformers==0.0.29.post2 --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade -r requirements.txt
