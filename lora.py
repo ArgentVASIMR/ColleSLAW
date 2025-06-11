@@ -34,7 +34,7 @@ as_is_args = [
     ["train_batch_size","batch_size"],
     ["gradient_accumulation_steps","grad_accum_step"],
     ["network_dim","network_dim"],
-    ["network_alpha","network_dim"],
+    ["network_alpha","network_alpha"],
     ["optimizer_type","optimiser"],
     ["loss_type","loss_type"],
     ["network_module","network_module"],
