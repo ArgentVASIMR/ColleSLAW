@@ -37,7 +37,7 @@ Q: Mixed precision?   A: fp16
 ## First time run:
 1. Inside of config.yaml, set `base_model_dir` to where your models are located.
 
-**WARNING FOR WINDOWS USERS:** When you copy-paste the directory, it will use \\backslashes\\; this will break. You need to change these into //forward slashes// for it to work, *or* double up on the backslashes in the directory.
+**WARNING FOR WINDOWS USERS:** When you copy-paste the directory, it will use \\backslashes\\; this will break. You need to change these into /forward slashes/ for it to work, *or* \\\\double up on the backslashes\\\\ in the directory.
 
 2. Add a dataset to the `dataset` folder. This must be of the structure `ColleSLAW/dataset/#_first,#_second,#_others`.
 3. Run the `run-training` file for your respective operating system. For Windows, it's `.bat`. For Linux, it's `.sh`.
